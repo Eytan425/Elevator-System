@@ -12,7 +12,7 @@ def text_to_speech(value):
     try:
         level = int(value)
         if -1 <= level <= 12:
-            engine.say(f"Elevator {elevator} is the closest. He is at level {generate_floor()}")
+            # engine.say(f"Elevator {elevator} is the closest. He is at level {generate_floor()}") Just wanted to check if the new functions work
             engine.say(f"Elevator {elevator} to level {level}")
         else:
             engine.say("The level input doesn't exist!")
